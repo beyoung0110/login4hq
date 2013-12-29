@@ -41,15 +41,10 @@
     
     <package name="root" namespace="/" extends="default">
     	<action name="">
-    		<result type="redirect">/alice</result>
-    	</action>
-    	<action name="alice">
-			<result>/front/alice.jsp</result>
-		</action>
-		<action name="bootstrap">
-			<result>/front/bootstrap.jsp</result>
-		</action>
+    		<result type="redirect">/hq/alice</result>
+    	</action>    	
     </package>
     
     <include file="account.xml"></include>
+    <include file="hq.xml"></include>
 </struts>

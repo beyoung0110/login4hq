@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"       
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 登录退出  -->
+    <package name="hq" namespace="/hq" extends="default">
+        <action name="alice">
+			<result>/front/alice.jsp</result>
+		</action>
+		<action name="bootstrap">
+			<result>/front/bootstrap.jsp</result>
+		</action>
+    </package>
+</struts>
