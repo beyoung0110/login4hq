@@ -16,7 +16,7 @@
        <init-param>
             <description>下面的uri列表不进行权限检查,多个URI用;分开如：/account/login;/account/login.jsp; </description>
             <param-name>excludeURIs</param-name>
-            <param-value>/account/login;/account/loginCheck;</param-value>
+            <param-value>/account/login;/account/logincheck;/account/adduser;</param-value>
         </init-param>
     </filter> 
 	

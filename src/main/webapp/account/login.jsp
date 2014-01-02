@@ -7,11 +7,11 @@
   <base href="<%= request.getScheme() + "://" + request.getServerName() + 
   		":" + request.getServerPort() + request.getContextPath() %>/" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>北京邮电大学-研究生预录取系统</title>
+  <title>小青青的登录系统</title>
 </head>
 <body>
 
-<form action="account/loginCheck" method="post" onsubmit="return loginCheck();">
+<form action="account/logincheck" method="post" onsubmit="return loginCheck();">
 	<table cellpadding="4px" id="account" width="95%">
 		<tr class="stuspecial">
 			<td class="middlesize rightalign" width="85px">用户名</td>
@@ -32,6 +32,29 @@
 			</td>
 			<td class="leftalign">
 				<span class="redletter" id="error"><s:property value="message" /><br /></span>
+			</td>
+		</tr>
+	</table>
+</form>
+
+<form action="account/adduser" method="post">
+	<table cellpadding="4px" id="account" width="95%">
+		<tr class="stuspecial">
+			<td class="middlesize rightalign" width="85px">用户名</td>
+			<td colspan="2">
+				<input type="text" name="newuser" placeholder="用户名" class="editline topmargin_5" value=""/>
+			</td>
+		</tr>
+		<tr>
+			<td class="middlesize rightalign">密码</td>
+			<td colspan="2">
+	 		<input type="password" name="newpassword" class="editline topmargin_5" value="" />
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="leftalign">
+			<button type="submit" class="button">注册</button>
 			</td>
 		</tr>
 	</table>

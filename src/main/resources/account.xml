@@ -8,9 +8,12 @@
        <action name="login" class="com.login4hq.action.account.LoginAction">
             <result name="success">/account/login.jsp</result>
        </action>
-       <action name="loginCheck" class="com.login4hq.action.account.LoginCheckAction">
+       <action name="logincheck" class="com.login4hq.action.account.LoginCheckAction">
             <result name="success" type="redirect">${redirectUrl}</result>
             <result name="input" type="redirect">/account/login?message=${message}</result>
+       </action>
+       <action name="adduser" class="com.login4hq.action.account.AddUser">
+            <result type="json"></result>
        </action>
     </package>
 </struts>
