@@ -3,11 +3,10 @@ package com.login4hq.dao;
 import com.free4lab.utils.sql.AbstractDAO;
 import com.free4lab.utils.sql.IEntityManagerHelper;
 import com.free4lab.utils.sql.entitymanager.NoCacheEntityManagerHelper;
+import com.login4hq.dao.AccountAdmin;
 
 public class AccountAdminDAO extends AbstractDAO<AccountAdmin> {
-	public String getClassName() {
-        return getEntityClass().getName();
-    }
+	
 	@Override
 	public Class getEntityClass() {
 		return AccountAdmin.class;

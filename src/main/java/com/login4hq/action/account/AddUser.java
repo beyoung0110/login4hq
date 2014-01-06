@@ -3,8 +3,8 @@ package com.login4hq.action.account;
 
 import org.apache.log4j.Logger;
 
-import com.login4hq.dao.AccountAdmin;
 import com.login4hq.dao.AccountAdminDAO;
+import com.login4hq.dao.AccountAdmin;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class AddUser extends ActionSupport{
