@@ -10,7 +10,7 @@ import javax.persistence.PersistenceUnit;
 
 import com.free4lab.utils.sql.entitymanager.NoCacheEntityManagerHelper;
 
-public class AccountAdminTestDAO<T> {
+public class AccountAdminJapDAO<T> {
 	
 	/*不会用
 	 * @PersistenceContext(unitName="HqLoginPU")
@@ -47,7 +47,7 @@ public class AccountAdminTestDAO<T> {
         AccountAdmin aa = new AccountAdmin();
         aa.setPwdSalt("111");
 		aa.setUser("hq5");
-		AccountAdminTestDAO<AccountAdmin> aadao = new AccountAdminTestDAO<AccountAdmin>();
+		AccountAdminJapDAO<AccountAdmin> aadao = new AccountAdminJapDAO<AccountAdmin>();
 		aadao.save(aa);
     }
 }

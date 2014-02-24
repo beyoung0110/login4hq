@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"       
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 登录退出  -->
+    <package name="upload" namespace="/upload" extends="default">
+       <action name="uploadfile" class="com.login4hq.action.upload.UploadAction">
+    		<!-- 配置fileUpload的拦截器 -->  
+            <interceptor-ref name="fileUpload">  
+                <!-- 配置允许上传的文件类型 -->  
+                <param name="allowedTypes">image/bmp,image/png,image/gif,image/jpg,image/pjpeg,image/jpeg</param>  
+                <!-- 配置允许上传的文件大小 -->  
+                <param name="maximumSize">500000</param>  
+            </interceptor-ref>  
+            <interceptor-ref name="defaultStack" />
+    		<!-- 设置Action的属性值,文件保存路径 -->  
+            <param name="savePathHq">/upload</param>  
+            
+            <result name="success">/upload/success.jsp</result>
+            <!-- 配置该应用的input逻辑视图 -->  
+            <result name="input">/upload/failed.jsp</result>  
+       </action>
+    </package>
+</struts>

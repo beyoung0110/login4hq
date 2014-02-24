@@ -42,9 +42,10 @@
     <package name="root" namespace="/" extends="default">
     	<action name="">
     		<result type="redirect">/hq/alice</result>
-    	</action>    	
+    	</action>	
     </package>
     
     <include file="account.xml"></include>
     <include file="hq.xml"></include>
+    <include file="upload.xml"></include>
 </struts>

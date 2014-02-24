@@ -20,7 +20,7 @@ public class LoginCheckAction extends ActionSupport{
 	private String message;
 	
 	public String execute(){
-		AccountAdminDAO aadao = new AccountAdminDAO();
+		/*AccountAdminDAO aadao = new AccountAdminDAO();
 		List<AccountAdmin> aa = aadao.findByProperty("user", user);
 		if(aa != null && aa.size() > 0){
 			String password = aa.get(0).getPwdSalt();
@@ -46,10 +46,10 @@ public class LoginCheckAction extends ActionSupport{
 			}
 			return INPUT;
 		}
-		return SUCCESS;
+		return SUCCESS;*/
 			
 			
-		/*	
+			
 		if(user.equals("admin")){
 			if(passwordMd5.equals("123")){
 				redirectUrl = "/hq/alice";
@@ -73,7 +73,7 @@ public class LoginCheckAction extends ActionSupport{
 			}
 			return INPUT;
 		}
-		return SUCCESS;*/
+		return SUCCESS;
 	}
 
 	public String getPasswordMd5() {

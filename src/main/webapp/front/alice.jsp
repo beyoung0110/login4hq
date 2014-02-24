@@ -56,7 +56,7 @@
                             <li class="ui-nav-subitem ui-nav-subitem-current"><a href="#">二级导航 3-3</a></li>
                         </ul>
                         </li>
-                        <li class="ui-nav-item"><a href="#">一级导航 4</a></li>
+                        <li class="ui-nav-item"><a href="/upload/upload.jsp">演示上传附件功能</a></li>
                     </ul>
                     <div class="ui-nav-subcontainer"></div>
                 </div>
