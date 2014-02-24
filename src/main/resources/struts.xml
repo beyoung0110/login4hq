@@ -9,7 +9,8 @@
     <constant name="struts.devMode" value="true" />
     <!--拦截没有后缀的URL,如/ /hello /user/ -->
     <constant name="struts.action.extension" value="," />    
-
+	<!--更改tmp目录的位置，此处为相对路径 -->
+	<constant name="struts.multipart.saveDir" value="hqrepository"/>  
     <package name="default" extends="struts-default" abstract="true">
         <result-types>
 			<result-type name="json" class="org.apache.struts2.json.JSONResult"/>
